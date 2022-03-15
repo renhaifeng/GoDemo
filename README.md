@@ -39,3 +39,11 @@
 
 - 基本数据类型：bool、string、byte、rune、int/uint、int8/uint8、int16/uint16、int32/uint32、int64/uint64、float32、float64、complex64、complex128
 - 复合类型：function、array、struct、slice、map、interface、channel、pointer
+
+## 操作符
+
+- 算术操作符
+- 比较操作符
+- 逻辑操作符
+- 地址操作符：*（取值）、&（取址）
+- 接收操作符：<-
