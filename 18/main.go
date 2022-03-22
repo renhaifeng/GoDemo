@@ -40,13 +40,24 @@ func stringExpand() {
 	}
 }
 
+func byteExpand() {
+	byteList := []byte{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'}
+	var byteSlice []byte
+	for _, b := range byteList {
+		byteSlice = append(byteSlice, b)
+		fmt.Printf("%v  len:%d  cap:%d  ptr:%p\n", byteSlice, len(byteSlice), cap(byteSlice), byteSlice)
+	}
+}
+
 func main() {
 	intExpand()
 
 	chineseExpand()
 
 	stringExpand()
-	
+
+	byteExpand()
+
 	stringSlice := []int{1}
 
 	fmt.Printf("%v  len:%d  cap:%d  ptr:%p\n", stringSlice, len(stringSlice), cap(stringSlice), stringSlice)
