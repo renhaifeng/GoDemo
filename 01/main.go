@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func remove(s []int, i int) []int {
+	return append(s[:i], s[i+1:]...)
+}
+
 func main() {
 	type Map map[string][]int
 	m := make(Map)
